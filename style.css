@@ -2,3 +2,8 @@
   }  .navbar {    width: 100vw;    display: flex;    padding: 5px 10px;    align-items: center;    justify-content: space-between;    background: #000;    font-size: 1.2rem;    font-weight: bold;    color: white;    position: fixed;    top: 0;    left: 0;  }  .links {    display: flex;    align-items: center;    justify-content: space-around;    width: 40%;  }  .links a:hover {    transform: rotate(2deg);    text-shadow: 4px 3px 2px brown;    scale: 1.1;  }
   .stopwatchbox {    height: 100vh;    width: 100%;    display: flex;    align-items: center;    justify-content: center;  }  .stopwatch {    width: 450px;    height: 300px;    padding: 10px 20px;    background: #000;    border-radius: 5px 15% 15%;    box-shadow: 6px 9px 10px brown;  }  .screen {    width: 100%;    display: flex;    align-items: center;    justify-content: space-around;    color: white;    height: 70%;    font-size: 4rem;    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",      sans-serif;  }  .screen span {  cursor: none;    padding: 10px;  }  .btns {    width: 100%;
     display: flex;    align-items: center;    justify-content: space-evenly;  }  .btns button {  cursor: pointer;    padding: 10px 25px;    border-radius: 5px;    border: 1px solid white;    font-size: 1rem;    background: transparent;    color: white;      }  .btns button:active {    scale: 0.98;  }
+    @media (max-width:550px){
+      .navbar {    width: 100vw; font-size: .89rem; }
+      .stopwatch {    width: 350px;    height: 250px; } 
+      .screen {    width: 90%;  height:65%;    font-size: 2.5rem; }
+    }
